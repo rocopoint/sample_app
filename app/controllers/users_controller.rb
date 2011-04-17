@@ -4,8 +4,8 @@ class UsersController < ApplicationController
   
   
   def index
-    @users = User.all
     @title = "All users"
+    @users = User.paginate(:page => params[:page])
   end
   
   def show
