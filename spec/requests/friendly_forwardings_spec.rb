@@ -16,5 +16,4 @@ describe "FriendlyForwardings" do
     click_button
     response.should render_template('users/show')    
   end
-
 end

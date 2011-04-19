@@ -361,7 +361,6 @@ describe UsersController do
           delete :destroy, :id => @admin
         end.should_not change(User, :count)
       end
-    end
-    
+    end   
   end
 end
